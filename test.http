@@ -1,0 +1,7 @@
+@proto = ./protos/user.proto
+grpc://localhost:5000
+user.UserService.Register
+{
+  "email": "grp@mail.com",
+  "password": "password"
+}

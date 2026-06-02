@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 function connectToDb(dbName) {
   mongoose
-    .connect("mongodb://localhost:27017/", { dbName: dbName })
+    .connect("mongodb+srv://henritinysonic_db_user:eyH26AyiVbWjCTNz@cluster0.ryx1tmp.mongodb.net/", { dbName: dbName })
     .then(() => console.log("connected to db :" + dbName))
     .catch((e) => console.log(dbName + "error :", error.message));
 }
-module.exports= connectToDb
+module.exports = connectToDb
